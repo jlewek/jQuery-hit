@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>jQuery HIT</title>
+
+
+        <!-- CSS FILES -->
+        <link href='main.css' rel='stylesheet' type='text/css'>
+
+
+        <!-- BOWER COMPONENTS -->
+        <script type="text/javascript" src="/bower_components/jquery/dist/jquery.min.js"></script>
+
+        <!-- APP FILES -->
+        <script type="text/javascript" src="app/helpFunctions.js"></script>
+        <script type="text/javascript" src="app/main.js"></script>
+    </head>
+    <body>
+        <span>Select the photo of person who you don't like, and hit them.</span>
+        <p><input class="loadPictureForm" type="file" onchange="changePicture(event)"/></p>
+        <p><button onClick="clearSpace()">REMOVE PICTURE</button></p>
+
+
+        <div class="mainSpace" onClick="hitPicture(event,'blood')">
+            <img src="" id="imageSpace">
+        </div>
+    </body>
+</html>
